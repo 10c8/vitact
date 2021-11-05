@@ -19,18 +19,20 @@ export const Navbar = (): JSX.Element => {
       w-text="xl"
     >
       <Link
-        to="/"
+        to="/vitact"
         className={`${
-          location.pathname === '/' ? 'icon-btn icon-btn--active' : 'icon-btn'
+          location.pathname === '/vitact'
+            ? 'icon-btn icon-btn--active'
+            : 'icon-btn'
         }`}
         title="Home"
       >
         <Icon icon="carbon:home" />
       </Link>
       <Link
-        to="/about"
+        to="/vitact/about"
         className={`${
-          location.pathname === '/about'
+          location.pathname === '/vitact/about'
             ? 'icon-btn icon-btn--active'
             : 'icon-btn'
         }`}
