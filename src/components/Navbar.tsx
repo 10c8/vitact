@@ -19,9 +19,9 @@ export const Navbar = (): JSX.Element => {
       w-text="xl"
     >
       <Link
-        to="/vitact"
+        to="/vitact/"
         className={`${
-          location.pathname === '/vitact'
+          location.pathname === '/vitact/'
             ? 'icon-btn icon-btn--active'
             : 'icon-btn'
         }`}
