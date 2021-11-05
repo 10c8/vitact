@@ -13,7 +13,7 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      base: '/',
+      base: '/vitact/',
       registerType: 'prompt',
       includeAssets: [
         'favicon.svg',
