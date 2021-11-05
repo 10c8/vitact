@@ -1,0 +1,12 @@
+a,
+.prose {
+  @apply !text-gray-700 dark:!text-gray-200;
+}
+
+a:hover {
+  @apply !text-$color-primary;
+}
+
+.prose {
+  line-height: 1.5rem;
+}

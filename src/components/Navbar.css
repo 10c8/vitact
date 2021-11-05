@@ -1,0 +1,19 @@
+.icon-btn {
+  @apply bg-transparent rounded *flex-center p-2 transition-all text-gray-700 duration-200 dark:text-gray-200;
+}
+
+.icon-btn > svg {
+  @apply h-6 w-6;
+}
+
+.icon-btn:hover {
+  @apply text-$color-primary;
+}
+
+.icon-btn--active {
+  @apply bg-$color-primary;
+}
+
+.icon-btn--active > svg {
+  @apply text-white dark:text-$color-dark;
+}
