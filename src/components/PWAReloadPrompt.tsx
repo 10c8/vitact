@@ -30,7 +30,7 @@ export const PWAReloadPrompt = (): JSX.Element => {
 
   return (
     <>
-      {(offlineReady || needRefresh) && (
+      {needRefresh && (
         <div
           className="*stack-v"
           w-pos="fixed right-5 md:top-5 <md:(bottom-10 left-5)"
@@ -41,13 +41,11 @@ export const PWAReloadPrompt = (): JSX.Element => {
           w-rounded="lg"
           w-shadow="xl white"
         >
-          {!offlineReady && (
-            <div w-text="lg md:xl" w-m="b-5">
-              <span>
-                New content available, click on reload button to update.
-              </span>
-            </div>
-          )}
+          <div w-text="lg md:xl" w-m="b-5">
+            <span>
+              New content available, click on reload button to update.
+            </span>
+          </div>
           <div className="*stack-h" w-gap="3" w-w="full">
             {needRefresh && (
               <button
