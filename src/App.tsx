@@ -19,8 +19,10 @@ export function App(): JSX.Element {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/vitact">
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Route>
       </Routes>
 
       <div w-m="t-5 x-auto" w-text="center sm" w-opacity="25" w-select="none">
